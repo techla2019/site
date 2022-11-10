@@ -1,0 +1,1 @@
+document.getElementById("hd").style.fontSize ="3vw"
