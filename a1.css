@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right green, rgb(26, 23, 23));
+}
+.hd{
+    margin-left: 120px;
+    font-size: 2vw;
+    font-family: arial;
+}
+#hd{
+    margin-left: 120px;
+    font-size: 5vw;
+}
+.na{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: blue;
+    background: linear-gradient(to right, rgba(195, 212, 119, 0.712), grey);
+    /*margin-left: 5%;*/
+    position: sticky;
+   top: 0;
+   /* margin-right: 5%; */  
+    
+}
+.navb ul{
+    font-style: none;
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+    }
+    .navb ul a{
+        padding: 8px;
+        color: white;
+        text-decoration: none;
+        display: block;
+       
+    }  
+    .navb ul a:hover{
+        color: blue;
+        text-decoration: underline;
+       /* background-color: azure;*/
+    }
+
+    .tbutton{
+        position: absolute;
+        top: .25rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 15px;
+    }
+    .tbutton .bar {
+        background-color: aliceblue;
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+      
+        
+        
+    }
+    #pg{
+        background-image: url(pic.png);
+        background-size: cover;
+        height:56vh;
+        width: 100vw;
+        /*border-radius: 20px;*/
+        color: white;
+        text-align: center;
+       }
+       h1{
+        font-size: 2.5vw;
+       }
+       h2{
+        font-size: 2vw;
+       }
+       h5{
+        font-size: 1.2vw;
+        color: white;
+       }
+    @media (max-width: 600px) {
+        .tbutton{
+            display: flex;
+            
+
+        }
+         .navb{
+            display: none;
+            width: 100%;
+         }
+         .na{
+            flex-direction: column;
+            align-items: flex-start;
+         }
+         .navb ul {
+            width: 100%;
+            flex-direction: column;
+         }
+         .navb li{
+            text-align: right;
+         }
+         .navb li a {
+            padding: .5rem 1rem;
+         }
+         .navb.active{
+            display: flex;
+         }
+         h5{
+            font-size: 1.5vw;
+            color: blue;
+         }
+         #pg{
+            background-image: url(pic.png);
+            background-size: cover;
+         }
+    }
+ 
+
+   
